@@ -16,7 +16,9 @@ use \axguowen\facade\RedisClient;
 
 // Redis服务器配置信息设置（全局有效）
 RedisClient::setConfig([
+    // 默认连接本机
     'default' => 'localhost',
+    // 连接配置
     'connections' => [
         // 本机连接参数
         'localhost' => [
