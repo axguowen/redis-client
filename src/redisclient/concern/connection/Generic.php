@@ -82,9 +82,9 @@ trait Generic
      * @param string $mode
      * @return bool
      */
-    public function expire($key, $timeout, $mode = null)
+    public function expire($key, $timeout)
     {
-        return $this->getConnection(true)->expire($key, $timeout, $mode);
+        return $this->getConnection(true)->expire($key, $timeout);
     }
 
     /**
