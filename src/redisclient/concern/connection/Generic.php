@@ -79,7 +79,6 @@ trait Generic
      * @access public
      * @param string $key
      * @param int $timeout
-     * @param string $mode
      * @return bool
      */
     public function expire($key, $timeout)

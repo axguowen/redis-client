@@ -74,12 +74,11 @@ trait Generic
      * 设置过期时间（以秒为单位）
      * @access public
      * @param int $timeout
-     * @param string $mode
      * @return bool
      */
-    public function expire($timeout, $mode = null)
+    public function expire($timeout)
     {
-        return $this->connection->expire($this->key, $timeout, $mode);
+        return $this->connection->expire($this->key, $timeout);
     }
 
     /**
