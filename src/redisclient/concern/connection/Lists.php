@@ -238,12 +238,11 @@ trait Lists
      * 从链表末尾弹出一个或多个元素
      * @access public
      * @param string $key
-     * @param int $count 弹出数量
      * @return array|string|bool
      */
-    public function rPop($key, $count = 0)
+    public function rPop($key)
     {
-        return $this->getConnection(true)->rPop($key, $count);
+        return $this->getConnection(true)->rPop($key);
     }
 
     /**
