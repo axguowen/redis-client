@@ -89,6 +89,7 @@ class Connection
      */
     protected $breakMatchStr = [
         'Redis server went away',
+        'Connection timed out',
         'NOAUTH Authentication required.',
     ];
 
