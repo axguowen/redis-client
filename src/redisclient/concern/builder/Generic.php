@@ -378,4 +378,14 @@ trait Generic
     {
         return $this->connection->flushDB($password, $sync = null);
     }
+
+    /**
+     * 返回服务器当前时间
+     * @access public
+     * @return array
+     */
+    public function time()
+    {
+        return $this->connection->time();
+    }
 }

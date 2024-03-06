@@ -429,5 +429,14 @@ trait Generic
         }
         return $this->getConnection(true)->flushDB($sync);
     }
-    
+
+    /**
+     * 返回服务器当前时间
+     * @access public
+     * @return array
+     */
+    public function time()
+    {
+        return $this->getConnection(true)->time();
+    }
 }
