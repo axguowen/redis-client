@@ -380,6 +380,17 @@ trait Generic
     }
 
     /**
+     * 持久化
+     * @access public
+     * @param bool $master 是否主服务器
+     * @return bool
+     */
+    public function bgSave($master = false)
+    {
+        return $this->connection->bgSave($master);
+    }
+
+    /**
      * 返回服务器当前时间
      * @access public
      * @return array
